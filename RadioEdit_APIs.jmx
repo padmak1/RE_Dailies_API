@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="AMP APIs" enabled="true">
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <stringProp name="TestPlan.comments"></stringProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <collectionProp name="TestPlan.thread_groups"/>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">radioedit.iheart.com</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">*/*</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Accept-Language</stringProp>
+            <stringProp name="Header.value">en-us</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
+        <stringProp name="filename">T:\Operations\QA\Automation\jakarta-jmeter-2.3.4\jakarta-jmeter-2.3.4\bin\CSV files\UserAccounts.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">userID,deviceID,deviceName,param1,acctName</stringProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="false">
+        <boolProp name="TestElement.per_iteration">true</boolProp>
+        <collectionProp name="UserParameters.thread_values">
+          <collectionProp name="-1205797242">
+            <stringProp name=""></stringProp>
+            <stringProp name=""></stringProp>
+            <stringProp name="1092251154">UHa0jUw1ZEvg7raCty5jIA==</stringProp>
+            <stringProp name="1860368103">111_1@mail.com</stringProp>
+            <stringProp name="47922926">29159</stringProp>
+          </collectionProp>
+          <collectionProp name="-1322873202">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="1144321770">CDheJF5w4gGWl7p4VODuew==</stringProp>
+            <stringProp name="1663854598">111_2@mail.com</stringProp>
+            <stringProp name="47922948">29160</stringProp>
+          </collectionProp>
+          <collectionProp name="-1000658404">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="1782115282">rRSgNdhWtBvXjegPc8u6Xg==</stringProp>
+            <stringProp name="1270827588">111_4@mail.com</stringProp>
+            <stringProp name="47922949">29161</stringProp>
+          </collectionProp>
+          <collectionProp name="-617624139">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-1203271405">gyo7hpIYXj2LLPolL5+MXA==</stringProp>
+            <stringProp name="1074314083">111_5@mail.com</stringProp>
+            <stringProp name="47922950">29162</stringProp>
+          </collectionProp>
+          <collectionProp name="-892039681">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="800407157">L6+jZMYb0ojHyfwGkRMrgQ==</stringProp>
+            <stringProp name="877800578">111_6@mail.com</stringProp>
+            <stringProp name="47922951">29163</stringProp>
+          </collectionProp>
+          <collectionProp name="-1894859329">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-1764023820">GTGLXrqv/cdiNfrvuMn4wg==</stringProp>
+            <stringProp name="681287073">111_7@mail.com</stringProp>
+            <stringProp name="47922952">29164</stringProp>
+          </collectionProp>
+          <collectionProp name="1664460649">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="1780908629">52v1+RzCGX/bdd1MufCN0A==</stringProp>
+            <stringProp name="484773568">111_8@mail.com</stringProp>
+            <stringProp name="47922953">29165</stringProp>
+          </collectionProp>
+          <collectionProp name="-1380710765">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-1794574908">6ipJF20l7rQFeheXLAvVSg==</stringProp>
+            <stringProp name="288260063">111_9@mail.com</stringProp>
+            <stringProp name="47922954">29166</stringProp>
+          </collectionProp>
+          <collectionProp name="-275125928">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-885441407">h3fwDn6DaA6aHUwkZsbr/g==</stringProp>
+            <stringProp name="1315730589">111_10@mail.com</stringProp>
+            <stringProp name="47922955">29167</stringProp>
+          </collectionProp>
+          <collectionProp name="-2088074361">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="1883272110">3LqLOi40JlKNF21bZEpWwg==</stringProp>
+            <stringProp name="1119217084">111_11@mail.com</stringProp>
+            <stringProp name="47922956">29168</stringProp>
+          </collectionProp>
+          <collectionProp name="-1489101962">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-1760382894">CkhIcURw1XoLXH3TV17vnQ==</stringProp>
+            <stringProp name="922703579">111_12@mail.com</stringProp>
+            <stringProp name="47922957">29169</stringProp>
+          </collectionProp>
+          <collectionProp name="-1018006912">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="1749339576">A7APkD2MMCMCvks5zDtcdg==</stringProp>
+            <stringProp name="726190074">111_13@mail.com</stringProp>
+            <stringProp name="47922979">29170</stringProp>
+          </collectionProp>
+          <collectionProp name="-1534143770">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="1338035063">+BpqTLrHei1YoPr4qp98MQ==</stringProp>
+            <stringProp name="529676569">111_14@mail.com</stringProp>
+            <stringProp name="47922981">29172</stringProp>
+          </collectionProp>
+          <collectionProp name="-641675573">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="613601282">qv6+/BY56nhuGDcdbP+DRA==</stringProp>
+            <stringProp name="333163064">111_15@mail.com</stringProp>
+            <stringProp name="47922982">29173</stringProp>
+          </collectionProp>
+          <collectionProp name="-2052057497">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-794849120">m3YwUdmMeAqtH+5NuTQpcw==</stringProp>
+            <stringProp name="136649559">111_16@mail.com</stringProp>
+            <stringProp name="47922983">29174</stringProp>
+          </collectionProp>
+          <collectionProp name="1563743161">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-168145521">TWB9l5C2hv94I1WYJAQV3A==</stringProp>
+            <stringProp name="-59863946">111_17@mail.com</stringProp>
+            <stringProp name="47922984">29175</stringProp>
+          </collectionProp>
+          <collectionProp name="366671877">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="1405860422">gEzhDJdCTFrKimrv50f37Q==</stringProp>
+            <stringProp name="-256377451">111_18@mail.com</stringProp>
+            <stringProp name="47922985">29176</stringProp>
+          </collectionProp>
+          <collectionProp name="-320715066">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="1262606326">xkBw8ocMZ1jKz6qwSrN6kw==</stringProp>
+            <stringProp name="-452890956">111_19@mail.com</stringProp>
+            <stringProp name="47922986">29177</stringProp>
+          </collectionProp>
+          <collectionProp name="699973828">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-57315230">snezg/n3M25qnDQdXAdidQ==</stringProp>
+            <stringProp name="-481220770">111_20@mail.com</stringProp>
+            <stringProp name="47922987">29178</stringProp>
+          </collectionProp>
+          <collectionProp name="505882947">
+            <stringProp name="0"></stringProp>
+            <stringProp name="0"></stringProp>
+            <stringProp name="-867910950">2wJ88JhIvhpDer7CT2s+RQ==</stringProp>
+            <stringProp name="-677734275">111_21@mail.com</stringProp>
+            <stringProp name="47922988">29179</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <collectionProp name="UserParameters.names">
+          <stringProp name="VIEWSTATE">VIEWSTATE</stringProp>
+          <stringProp name="jsessionid">jsessionid</stringProp>
+          <stringProp name="607796817">sessionId</stringProp>
+          <stringProp name="-266666762">userName</stringProp>
+          <stringProp name="-1005400924">profileId</stringProp>
+        </collectionProp>
+        <boolProp name="UserParameters.per_iteration">false</boolProp>
+      </UserParameters>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Radio Edit(DL Scheduler)" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1392735257000</longProp>
+        <longProp name="ThreadGroup.end_time">1392735257000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Prod Env" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Prod env" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/service/dl/qa-automated-monitoring</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1068755167">&quot;query_resource&quot;:</stringProp>
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="127021794">&quot;description&quot;:&quot;New York’s #1 Hit Music Station&quot;,&quot;for&quot;:&quot;device&quot;,&quot;id&quot;:&quot;1469&quot;,&quot;img&quot;:&quot;http://imgproxy.iheart.com/asset/nop()/img.ccrd.clearchannel.com/media/mlib/2135/2012/05/200x200/whtz-fm_0_1335884822.png&quot;</stringProp>
+                <stringProp name="-999540286">&quot;kind&quot;:&quot;station&quot;</stringProp>
+                <stringProp name="746110702">&quot;link&quot;:&quot;ihr://play/live/1469&quot;,&quot;link_text&quot;:&quot;Play Z100&quot;,&quot;name&quot;:&quot;Z100&quot;}]</stringProp>
+                <stringProp name="1114325502">&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/a02b4600-9247-4a82-8daf-a632322f58d9.jpg&quot;</stringProp>
+                <stringProp name="-1644938798">&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Test Slide 1 Copy&quot;,&quot;title&quot;:&quot;Test Slide 1 Title: Play Z100&quot;}</stringProp>
+                <stringProp name="-712374417">&quot;description&quot;:&quot;Play David Lee Roth Station&quot;,&quot;for&quot;:&quot;device&quot;,&quot;id&quot;:&quot;58826&quot;,&quot;img&quot;:&quot;http://imgproxy.iheart.com/catalog/a58826&quot;,&quot;kind&quot;:&quot;artist&quot;,&quot;link&quot;:&quot;ihr://play/custom/artist/58826/&quot;,&quot;link_text&quot;:&quot;Play David Lee Roth&quot;</stringProp>
+                <stringProp name="477441074">&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/239ad01e-ce79-40ba-8497-cd2cac699046.jpg&quot;,&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Test Slide 2 - Copy&quot;,&quot;title&quot;:&quot;Test Slide 2 - Title: Play Custom Artist Station&quot;</stringProp>
+                <stringProp name="-1913470870">&quot;description&quot;:&quot;Play track station&quot;,&quot;for&quot;:&quot;device&quot;,&quot;id&quot;:&quot;19282656&quot;,&quot;img&quot;:&quot;http://imgproxy.iheart.com/catalog/t19282656&quot;,&quot;kind&quot;:&quot;track&quot;,&quot;link&quot;:&quot;ihr://play/custom/track/19282656/&quot;,&quot;link_text&quot;:&quot;Play (I&apos;ve Had) The Time Of My Life (Remastered 2003) (Bill Medley &amp; Jennifer Warnes)&quot;</stringProp>
+                <stringProp name="-1105393538">&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/df4f225a-0cb7-40c8-9764-ce4337eb77fd.jpg&quot;,&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Test Slide 3 copy&quot;,&quot;title&quot;:&quot;Test Slide 3 Title: Play Track station&quot;</stringProp>
+                <stringProp name="1052676230">&quot;description&quot;:&quot;Yahoo!&quot;,&quot;for&quot;:&quot;web&quot;,&quot;id&quot;:&quot;&quot;,&quot;img&quot;:&quot;&quot;,&quot;kind&quot;:&quot;user&quot;,&quot;link&quot;:&quot;http://www.yahoo.com&quot;,&quot;link_text&quot;:&quot;Yahoo!&quot;,&quot;name&quot;:&quot;User&quot;</stringProp>
+                <stringProp name="-518330192">&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/10a1faaf-bad6-44ce-933f-c6a9fdb13b30.jpg&quot;,&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Test slide 4 copy&quot;,&quot;title&quot;:&quot;Test Slide 4 - Title: Go to custom link&quot;</stringProp>
+                <stringProp name="-684125764">&quot;attachments&quot;:[],&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/27c30f87-28ba-4c6f-b2c4-9f49eec17e88.jpg&quot;,&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Test Slide 5 copy&quot;,&quot;title&quot;:&quot;Test Slide 5 Title - No Target Link&quot;</stringProp>
+                <stringProp name="0"></stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="QA Env" enabled="false">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="QA env" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://10.5.1.28/service/dl/qa-automated-monitoring</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="1134100695">&quot;description&quot;: &quot;New York&apos;s Hit Music Station &quot;, &quot;for&quot;: &quot;device&quot;, &quot;id&quot;: &quot;1469&quot;, &quot;img&quot;: &quot;http://imgproxy.iheart.com/asset/nop()/img.ccrd.clearchannel.com/media/mlib/2135/2012/05/200x200/whtz-fm_0_1335884822.png&quot;, &quot;kind&quot;: &quot;station&quot;, &quot;link&quot;: &quot;ihr://play/custom/live/1469/&quot;, &quot;link_text&quot;: &quot;Play Z100 (WHTZ-FM)&quot;, &quot;name&quot;: &quot;Z100 (WHTZ-FM)&quot;</stringProp>
+                <stringProp name="-371759667">&quot;enabled&quot;: true, &quot;image_url&quot;: &quot;http://10.5.1.28/service/img/nop()/assets/images/a0cde6c5-a94f-4572-9fa6-3d6c2a966fdd.jpg&quot;, &quot;important&quot;: false, &quot;subtitle&quot;: &quot;Test Slide 1 Copy&quot;, &quot;title&quot;: &quot;Test Slide 1 Title: Play Z100&quot;</stringProp>
+                <stringProp name="173356803">&quot;description&quot;: &quot;Play David Lee Roth Station&quot;, &quot;for&quot;: &quot;device&quot;, &quot;id&quot;: &quot;58826&quot;, &quot;img&quot;: &quot;http://imgproxy.iheart.com/catalog/a58826&quot;, &quot;kind&quot;: &quot;artist&quot;, &quot;link&quot;: &quot;ihr://play/custom/artist/58826/&quot;, &quot;link_text&quot;: &quot;Play David Lee Roth&quot;, &quot;name&quot;: &quot;David Lee Roth&quot;</stringProp>
+                <stringProp name="-1936624684">&quot;enabled&quot;: true, &quot;image_url&quot;: &quot;http://10.5.1.28/service/img/nop()/assets/images/520dd64f-9706-47c7-a8e9-7ffcdfcefb93.jpg&quot;, &quot;important&quot;: false, &quot;subtitle&quot;: &quot;Test Slide 2 - Copy&quot;, &quot;title&quot;: &quot;Test Slide 2 - Title: Play Custom Artist Station&quot;</stringProp>
+                <stringProp name="426047136">&quot;description&quot;: &quot;Play track station&quot;, &quot;for&quot;: &quot;device&quot;, &quot;id&quot;: &quot;19282656&quot;, &quot;img&quot;: &quot;http://imgproxy.iheart.com/catalog/t19282656&quot;, &quot;kind&quot;: &quot;track&quot;, &quot;link&quot;: &quot;ihr://play/custom/track/19282656/&quot;, &quot;link_text&quot;: &quot;Play (I&apos;ve Had) The Time Of My Life (Remastered 2003) (Bill Medley &amp; Jennifer Warnes)&quot;, &quot;name&quot;: &quot;(I&apos;ve Had) The Time Of My Life (Remastered 2003) (Bill Medley &amp; Jennifer Warnes)&quot;</stringProp>
+                <stringProp name="-646326144">&quot;enabled&quot;: true, &quot;image_url&quot;: &quot;http://10.5.1.28/service/img/nop()/assets/images/57bc693c-b4f9-4ecc-ba93-cc1940e601fa.jpg&quot;, &quot;important&quot;: false, &quot;subtitle&quot;: &quot;Test Slide 3 copy&quot;, &quot;title&quot;: &quot;Test Slide 3 Title: Play Track station&quot;</stringProp>
+                <stringProp name="497383746"> &quot;enabled&quot;: true, &quot;image_url&quot;: &quot;http://10.5.1.28/service/img/nop()/assets/images/7edac9e7-a32f-48fb-b59f-788dcd309746.jpg&quot;, &quot;important&quot;: false, &quot;subtitle&quot;: &quot;Test slide 4 copy&quot;, &quot;title&quot;: &quot;Test Slide 4 - Title: Go to custom link&quot;</stringProp>
+                <stringProp name="1110359312">&quot;enabled&quot;: true, &quot;image_url&quot;: &quot;http://10.5.1.28/service/img/nop()/assets/images/ea1d63bf-34ce-43b5-889b-e4e49a2d0648.jpg&quot;, &quot;important&quot;: false, &quot;subtitle&quot;: &quot;Test Slide 5 copy&quot;, &quot;title&quot;: &quot;Test Slide 5 Title - No Target Link&quot;</stringProp>
+                <stringProp name="-372636203">&quot;query_resource&quot;: &quot;/storage/default/leads/containers/qa-automated-monitoring&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+            </value>
+          </objProp>
+          <objProp>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="DL Sceduler" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1393876196000</longProp>
+        <longProp name="ThreadGroup.end_time">1393876196000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Prod" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_android" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/android.sliderwide</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_blackberry" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/blackberry.slider</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_iPad" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/ipad.sliderwide</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="1068755167">&quot;query_resource&quot;:</stringProp>
+                <stringProp name="1771451067">&quot;description&quot;:&quot;&quot;,&quot;for&quot;:&quot;device&quot;,&quot;id&quot;:&quot;&quot;,&quot;img&quot;:&quot;&quot;,&quot;kind&quot;:&quot;user&quot;,&quot;link&quot;:&quot;https://itunes.apple.com/us/app/iheartradio-free-streaming/id290638154?mt=8&quot;,&quot;link_text&quot;:&quot;App store&quot;,&quot;name&quot;:&quot;User&quot;</stringProp>
+                <stringProp name="-743491079">&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/57bf70d6-ed28-4c13-b1d3-bbd31a7172a0.jpg&quot;,&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Delete your existing iPad app and upgrade today.&quot;,&quot;title&quot;:&quot;Download the NEW iHeartRadio App&quot;</stringProp>
+                <stringProp name="870017983">&quot;attachments&quot;:[{&quot;description&quot;:&quot;Celebrating Sinatra’s Centennial&quot;,&quot;for&quot;:&quot;device&quot;,&quot;id&quot;:&quot;6784&quot;,&quot;img&quot;:&quot;http://imgproxy.iheart.com/asset/nop()/img.ccrd.clearchannel.com/media/mlib/2135/2015/01/200x200/sinatra_fl_600_0_1421863446.png&quot;,&quot;kind&quot;:&quot;station&quot;,&quot;link&quot;:&quot;ihr://play/live/6784&quot;,&quot;link_text&quot;:&quot;Play The Standard Radio&quot;,&quot;name&quot;:&quot;The Standard Radio&quot;</stringProp>
+                <stringProp name="-550141325">&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/94a6f343-ab73-4026-8e25-6ccad4b8ed36.jpg&quot;,&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Celebrating Sinatra’s Centennial&quot;,&quot;title&quot;:&quot;Play The Standard Radio&quot;</stringProp>
+                <stringProp name="-1941089062">&quot;attachments&quot;:[{&quot;description&quot;:&quot;Look Ma!  Rock Music!&quot;,&quot;for&quot;:&quot;device&quot;,&quot;id&quot;:&quot;4443&quot;,&quot;img&quot;:&quot;http://imgproxy.iheart.com/asset/nop()/img.ccrd.clearchannel.com/media/mlib/2135/2012/12/200x200/rock_nation_0_1355419321.png&quot;,&quot;kind&quot;:&quot;station&quot;,&quot;link&quot;:&quot;ihr://play/live/4443&quot;,&quot;link_text&quot;:&quot;Play Rock Nation&quot;,&quot;name&quot;:&quot;Rock Nation&quot;</stringProp>
+                <stringProp name="2040314331">&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/60ff6b51-f38c-439a-8212-4aeb6e872252.jpg&quot;,&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Featuring music from Led Zeppelin to The Foo Fighters, and everything between&quot;,&quot;title&quot;:&quot;Look Ma!  Rock Music!&quot;</stringProp>
+                <stringProp name="838129821">&quot;attachments&quot;:[{&quot;description&quot;:&quot;Mixing and Remixing The Hits 24/7&quot;,&quot;for&quot;:&quot;device&quot;,&quot;id&quot;:&quot;4776&quot;,&quot;img&quot;:&quot;http://imgproxy.iheart.com/asset/nop()/img.ccrd.clearchannel.com/media/mlib/1/2012/05/200x200/spin_cycle_0_1336139290.png&quot;,&quot;kind&quot;:&quot;station&quot;,&quot;link&quot;:&quot;ihr://play/live/4776&quot;,&quot;link_text&quot;:&quot;Play Spin Cycle&quot;,&quot;name&quot;:&quot;Spin Cycle&quot;</stringProp>
+                <stringProp name="1349352236">&quot;enabled&quot;:true,&quot;image_url&quot;:&quot;http://i.iheart.com/v3/re/assets/images/152c5064-f2e9-4b9a-a651-17e8fe2b2632.jpg&quot;,&quot;important&quot;:false,&quot;subtitle&quot;:&quot;Mixing and Remixing The Hits 24/7&quot;,&quot;title&quot;:&quot;&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_iphone" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/iphone.sliderwide</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_windowsphone8" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/windowsphone8.slider</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_webapp" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/webapp.us.slider</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+        </hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Stage" enabled="false">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_android(Stage)" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/android.sliderwide-staging</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="-200818373">&quot;query_resource&quot;: &quot;/storage/default/leads/containers/android-16x9-staging&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_blackberry(stage)" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/blackberry.slider-staging</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="-1282046028">&quot;query_resource&quot;: &quot;/storage/default/leads/containers/blackberry-10-staging&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_iPad(stage)" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/ipad.sliderwide-staging</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="270825952">&quot;query_resource&quot;: &quot;/storage/default/leads/containers/ipad-16x9-staging&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_iphone(stage)" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/iphone.sliderwide-staging</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="-545580933">&quot;query_resource&quot;: &quot;/storage/default/leads/containers/iphone-16x9-staging&quot;</stringProp>
+                <stringProp name="-2138938962">&quot;description&quot;: &quot;Calvin Harris&quot;, &quot;for&quot;: &quot;device&quot;, &quot;id&quot;: &quot;&quot;, &quot;img&quot;: &quot;&quot;, &quot;kind&quot;: &quot;user&quot;, &quot;link&quot;: &quot;http://www.calvinharris.com&quot;, &quot;link_text&quot;: &quot;Calvin Harris&quot;, &quot;name&quot;: &quot;User&quot;</stringProp>
+                <stringProp name="-1814088586">&quot;enabled&quot;: true, &quot;image_url&quot;: &quot;http://imgproxy.iheart.com/service/img/nop()/assets/images/c4ed6e48-7c9e-41a6-b61e-0a803d0f5585.JPG&quot;, &quot;important&quot;: false, &quot;subtitle&quot;: &quot;Visit his site. You know you wanna.&quot;, &quot;title&quot;: &quot;Calvin Harris&quot;</stringProp>
+                <stringProp name="22380219">&quot;description&quot;: &quot;&quot;, &quot;for&quot;: &quot;device&quot;, &quot;id&quot;: &quot;40026&quot;, &quot;img&quot;: &quot;http://imgproxy.iheart.com/catalog/a40026&quot;, &quot;kind&quot;: &quot;artist&quot;, &quot;link&quot;: &quot;ihr://play/custom/artist/40026/&quot;, &quot;link_text&quot;: &quot;Play Regis Philbin&quot;, &quot;name&quot;: &quot;Regis Philbin&quot;</stringProp>
+                <stringProp name="-633650985"> &quot;enabled&quot;: true, &quot;image_url&quot;: &quot;http://imgproxy.iheart.com/service/img/nop()/assets/images/18aba965-8cb6-4ee1-be32-96905a025ef3.png&quot;, &quot;important&quot;: false, &quot;subtitle&quot;: &quot;Check it out now!&quot;, &quot;title&quot;: &quot;Live with Regis, Kelly, and Steven&quot;</stringProp>
+                <stringProp name="831219694">&quot;enabled&quot;: true, &quot;image_url&quot;: &quot;http://imgproxy.iheart.com/service/img/nop()/assets/images/07d89b01-ae13-4deb-ab39-3748d1bd785c.png&quot;, &quot;important&quot;: false, &quot;subtitle&quot;: &quot;Go to Google&quot;, &quot;title&quot;: &quot;Google&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_windowsphone8(stage)" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/windowsphone8.slider-staging</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="1149570889">&quot;query_resource&quot;: &quot;/storage/default/leads/containers/windowsphone-8-staging&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DL scheduler_webapp(stage)" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Argument List" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">http://api2.iheart.com/v2/cms/query/webapp.us.slider-staging</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1588624881">&quot;exec_time&quot;:</stringProp>
+                <stringProp name="230134117">&quot;query_resource&quot;: &quot;/storage/default/leads/containers/iheartcom-staging&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+            </value>
+          </objProp>
+          <objProp>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
